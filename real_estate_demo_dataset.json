@@ -1,0 +1,3602 @@
+{
+  "company": {
+    "name": "PrimeNest Realty",
+    "office": "Baner, Pune",
+    "phone": "+91-9876543210",
+    "email": "info@primenestrealty.demo"
+  },
+  "builders": [
+    {
+      "name": "Builder A"
+    },
+    {
+      "name": "Builder B"
+    },
+    {
+      "name": "Builder C"
+    },
+    {
+      "name": "Builder D"
+    },
+    {
+      "name": "Builder E"
+    },
+    {
+      "name": "Builder F"
+    },
+    {
+      "name": "Builder G"
+    },
+    {
+      "name": "Builder H"
+    },
+    {
+      "name": "Builder I"
+    },
+    {
+      "name": "Builder J"
+    }
+  ],
+  "sales_agents": [
+    {
+      "id": "SA001",
+      "name": "Sales Agent 1",
+      "phone": "+91-9895822412"
+    },
+    {
+      "id": "SA002",
+      "name": "Sales Agent 2",
+      "phone": "+91-9824942603"
+    },
+    {
+      "id": "SA003",
+      "name": "Sales Agent 3",
+      "phone": "+91-9813356886"
+    },
+    {
+      "id": "SA004",
+      "name": "Sales Agent 4",
+      "phone": "+91-9846913810"
+    },
+    {
+      "id": "SA005",
+      "name": "Sales Agent 5",
+      "phone": "+91-9842868828"
+    },
+    {
+      "id": "SA006",
+      "name": "Sales Agent 6",
+      "phone": "+91-9839958838"
+    },
+    {
+      "id": "SA007",
+      "name": "Sales Agent 7",
+      "phone": "+91-9828728463"
+    },
+    {
+      "id": "SA008",
+      "name": "Sales Agent 8",
+      "phone": "+91-9823756669"
+    },
+    {
+      "id": "SA009",
+      "name": "Sales Agent 9",
+      "phone": "+91-9883197857"
+    },
+    {
+      "id": "SA010",
+      "name": "Sales Agent 10",
+      "phone": "+91-9821668732"
+    },
+    {
+      "id": "SA011",
+      "name": "Sales Agent 11",
+      "phone": "+91-9889254563"
+    },
+    {
+      "id": "SA012",
+      "name": "Sales Agent 12",
+      "phone": "+91-9866629388"
+    },
+    {
+      "id": "SA013",
+      "name": "Sales Agent 13",
+      "phone": "+91-9814265799"
+    },
+    {
+      "id": "SA014",
+      "name": "Sales Agent 14",
+      "phone": "+91-9813999315"
+    },
+    {
+      "id": "SA015",
+      "name": "Sales Agent 15",
+      "phone": "+91-9822575562"
+    }
+  ],
+  "rental_agents": [
+    {
+      "id": "RA001",
+      "name": "Rental Agent 1",
+      "phone": "+91-9739345092"
+    },
+    {
+      "id": "RA002",
+      "name": "Rental Agent 2",
+      "phone": "+91-9741227216"
+    },
+    {
+      "id": "RA003",
+      "name": "Rental Agent 3",
+      "phone": "+91-9777827638"
+    },
+    {
+      "id": "RA004",
+      "name": "Rental Agent 4",
+      "phone": "+91-9790801586"
+    },
+    {
+      "id": "RA005",
+      "name": "Rental Agent 5",
+      "phone": "+91-9713561597"
+    },
+    {
+      "id": "RA006",
+      "name": "Rental Agent 6",
+      "phone": "+91-9785329037"
+    },
+    {
+      "id": "RA007",
+      "name": "Rental Agent 7",
+      "phone": "+91-9736687537"
+    },
+    {
+      "id": "RA008",
+      "name": "Rental Agent 8",
+      "phone": "+91-9797226012"
+    },
+    {
+      "id": "RA009",
+      "name": "Rental Agent 9",
+      "phone": "+91-9783140807"
+    },
+    {
+      "id": "RA010",
+      "name": "Rental Agent 10",
+      "phone": "+91-9766306997"
+    }
+  ],
+  "sale_properties": [
+    {
+      "property_id": "SALE001",
+      "property_name": "Green Residency",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Plot",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 1856,
+      "carpet_area_sqft": 1373,
+      "price": 11600000,
+      "address": {
+        "locality": "Kharadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder F",
+      "rera_number": "P52100046421",
+      "loan_available": true,
+      "banks": [
+        "HDFC",
+        "Bank of Baroda",
+        "ICICI"
+      ],
+      "amenities": [
+        "Swimming Pool",
+        "Lift",
+        "Visitor Parking",
+        "CCTV",
+        "24x7 Security",
+        "Co-working Space"
+      ],
+      "maintenance_per_month": 4972,
+      "available_units": 18,
+      "possession_date": "2026-11-15",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA012"
+    },
+    {
+      "property_id": "SALE002",
+      "property_name": "Lake Elite",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Office",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 1425,
+      "carpet_area_sqft": 1054,
+      "price": 6500000,
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder F",
+      "rera_number": "P52100085674",
+      "loan_available": true,
+      "banks": [
+        "HDFC",
+        "SBI",
+        "Kotak"
+      ],
+      "amenities": [
+        "Co-working Space",
+        "Garden",
+        "Yoga Deck",
+        "Power Backup",
+        "Swimming Pool",
+        "CCTV"
+      ],
+      "maintenance_per_month": 2913,
+      "available_units": 26,
+      "possession_date": "2027-07-13",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA008"
+    },
+    {
+      "property_id": "SALE003",
+      "property_name": "Skyline Elite",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Apartment",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 1408,
+      "carpet_area_sqft": 1041,
+      "price": 13500000,
+      "address": {
+        "locality": "Hadapsar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder J",
+      "rera_number": "P52100093227",
+      "loan_available": true,
+      "banks": [
+        "HDFC",
+        "Kotak",
+        "Bank of Baroda"
+      ],
+      "amenities": [
+        "Club House",
+        "Children Play Area",
+        "Visitor Parking",
+        "Power Backup",
+        "Co-working Space",
+        "Jogging Track"
+      ],
+      "maintenance_per_month": 3399,
+      "available_units": 22,
+      "possession_date": "2028-11-26",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA013"
+    },
+    {
+      "property_id": "SALE004",
+      "property_name": "Emerald Gardens",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 2333,
+      "carpet_area_sqft": 1726,
+      "price": 5300000,
+      "address": {
+        "locality": "Baner",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder D",
+      "rera_number": "P52100084341",
+      "loan_available": true,
+      "banks": [
+        "Bank of Baroda",
+        "ICICI",
+        "HDFC"
+      ],
+      "amenities": [
+        "Co-working Space",
+        "Children Play Area",
+        "Visitor Parking",
+        "Lift",
+        "CCTV",
+        "Club House"
+      ],
+      "maintenance_per_month": 3584,
+      "available_units": 10,
+      "possession_date": "2027-06-11",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA012"
+    },
+    {
+      "property_id": "SALE005",
+      "property_name": "Royal Towers",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Row House",
+      "configuration": "3 BHK",
+      "super_builtup_area_sqft": 2179,
+      "carpet_area_sqft": 1612,
+      "price": 19400000,
+      "address": {
+        "locality": "Bavdhan",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder D",
+      "rera_number": "P52100028131",
+      "loan_available": true,
+      "banks": [
+        "Kotak",
+        "Axis",
+        "SBI"
+      ],
+      "amenities": [
+        "Yoga Deck",
+        "Gym",
+        "Swimming Pool",
+        "Club House",
+        "Co-working Space",
+        "EV Charging"
+      ],
+      "maintenance_per_month": 5744,
+      "available_units": 29,
+      "possession_date": "2028-06-03",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA002"
+    },
+    {
+      "property_id": "SALE006",
+      "property_name": "Lake Elite",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Apartment",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 1870,
+      "carpet_area_sqft": 1383,
+      "price": 16400000,
+      "address": {
+        "locality": "Magarpatta",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder B",
+      "rera_number": "P52100099353",
+      "loan_available": true,
+      "banks": [
+        "Kotak",
+        "ICICI",
+        "Bank of Baroda"
+      ],
+      "amenities": [
+        "Swimming Pool",
+        "Power Backup",
+        "Visitor Parking",
+        "Club House",
+        "Children Play Area",
+        "Gym"
+      ],
+      "maintenance_per_month": 5457,
+      "available_units": 18,
+      "possession_date": "2028-02-26",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA013"
+    },
+    {
+      "property_id": "SALE007",
+      "property_name": "Urban Towers",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Villa",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 1930,
+      "carpet_area_sqft": 1428,
+      "price": 12100000,
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder C",
+      "rera_number": "P52100059009",
+      "loan_available": true,
+      "banks": [
+        "HDFC",
+        "Kotak",
+        "SBI"
+      ],
+      "amenities": [
+        "Indoor Games",
+        "24x7 Security",
+        "Children Play Area",
+        "Gym",
+        "Swimming Pool",
+        "CCTV"
+      ],
+      "maintenance_per_month": 5906,
+      "available_units": 21,
+      "possession_date": "2027-06-04",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA001"
+    },
+    {
+      "property_id": "SALE008",
+      "property_name": "Green Towers",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Villa",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 825,
+      "carpet_area_sqft": 610,
+      "price": 16900000,
+      "address": {
+        "locality": "Kharadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder H",
+      "rera_number": "P52100082063",
+      "loan_available": true,
+      "banks": [
+        "HDFC",
+        "ICICI",
+        "Axis"
+      ],
+      "amenities": [
+        "Garden",
+        "Jogging Track",
+        "Yoga Deck",
+        "EV Charging",
+        "Lift",
+        "Power Backup"
+      ],
+      "maintenance_per_month": 4134,
+      "available_units": 25,
+      "possession_date": "2027-12-24",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA015"
+    },
+    {
+      "property_id": "SALE009",
+      "property_name": "Skyline Heights",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 897,
+      "carpet_area_sqft": 663,
+      "price": 10800000,
+      "address": {
+        "locality": "Bavdhan",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder J",
+      "rera_number": "P52100082603",
+      "loan_available": true,
+      "banks": [
+        "HDFC",
+        "Kotak",
+        "Bank of Baroda"
+      ],
+      "amenities": [
+        "Gym",
+        "Swimming Pool",
+        "EV Charging",
+        "Co-working Space",
+        "Lift",
+        "Garden"
+      ],
+      "maintenance_per_month": 2776,
+      "available_units": 4,
+      "possession_date": "2027-09-05",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA002"
+    },
+    {
+      "property_id": "SALE010",
+      "property_name": "Royal Residency",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Villa",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 1220,
+      "carpet_area_sqft": 902,
+      "price": 21600000,
+      "address": {
+        "locality": "Bavdhan",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder J",
+      "rera_number": "P52100085525",
+      "loan_available": true,
+      "banks": [
+        "Axis",
+        "HDFC",
+        "Bank of Baroda"
+      ],
+      "amenities": [
+        "Yoga Deck",
+        "Visitor Parking",
+        "Garden",
+        "Swimming Pool",
+        "EV Charging",
+        "CCTV"
+      ],
+      "maintenance_per_month": 3951,
+      "available_units": 29,
+      "possession_date": "2027-11-26",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA008"
+    },
+    {
+      "property_id": "SALE011",
+      "property_name": "Urban Elite",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Villa",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 774,
+      "carpet_area_sqft": 572,
+      "price": 14800000,
+      "address": {
+        "locality": "Baner",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder D",
+      "rera_number": "P52100034931",
+      "loan_available": true,
+      "banks": [
+        "Kotak",
+        "Axis",
+        "HDFC"
+      ],
+      "amenities": [
+        "Visitor Parking",
+        "Club House",
+        "Power Backup",
+        "Children Play Area",
+        "Garden",
+        "Swimming Pool"
+      ],
+      "maintenance_per_month": 4315,
+      "available_units": 37,
+      "possession_date": "2027-01-10",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA001"
+    },
+    {
+      "property_id": "SALE012",
+      "property_name": "Skyline Gardens",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Plot",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 841,
+      "carpet_area_sqft": 622,
+      "price": 10500000,
+      "address": {
+        "locality": "Bavdhan",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder D",
+      "rera_number": "P52100062565",
+      "loan_available": true,
+      "banks": [
+        "SBI",
+        "HDFC",
+        "Axis"
+      ],
+      "amenities": [
+        "Gym",
+        "Visitor Parking",
+        "Power Backup",
+        "Children Play Area",
+        "Yoga Deck",
+        "CCTV"
+      ],
+      "maintenance_per_month": 5353,
+      "available_units": 37,
+      "possession_date": "2028-08-09",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA012"
+    },
+    {
+      "property_id": "SALE013",
+      "property_name": "Skyline Heights",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Office",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 1038,
+      "carpet_area_sqft": 768,
+      "price": 12000000,
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder A",
+      "rera_number": "P52100051104",
+      "loan_available": true,
+      "banks": [
+        "SBI",
+        "Bank of Baroda",
+        "Axis"
+      ],
+      "amenities": [
+        "Jogging Track",
+        "CCTV",
+        "Lift",
+        "Club House",
+        "Gym",
+        "Yoga Deck"
+      ],
+      "maintenance_per_month": 2828,
+      "available_units": 13,
+      "possession_date": "2026-12-11",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA010"
+    },
+    {
+      "property_id": "SALE014",
+      "property_name": "Lake Residency",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Office",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 1476,
+      "carpet_area_sqft": 1092,
+      "price": 7500000,
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder A",
+      "rera_number": "P52100091183",
+      "loan_available": true,
+      "banks": [
+        "SBI",
+        "Axis",
+        "ICICI"
+      ],
+      "amenities": [
+        "Lift",
+        "Power Backup",
+        "Garden",
+        "Co-working Space",
+        "24x7 Security",
+        "Yoga Deck"
+      ],
+      "maintenance_per_month": 3587,
+      "available_units": 27,
+      "possession_date": "2027-02-13",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA011"
+    },
+    {
+      "property_id": "SALE015",
+      "property_name": "Green Gardens",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Office",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 1297,
+      "carpet_area_sqft": 959,
+      "price": 6300000,
+      "address": {
+        "locality": "Viman Nagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder B",
+      "rera_number": "P52100019602",
+      "loan_available": true,
+      "banks": [
+        "Kotak",
+        "HDFC",
+        "ICICI"
+      ],
+      "amenities": [
+        "Club House",
+        "24x7 Security",
+        "Swimming Pool",
+        "Garden",
+        "CCTV",
+        "Power Backup"
+      ],
+      "maintenance_per_month": 3146,
+      "available_units": 30,
+      "possession_date": "2028-04-10",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA012"
+    },
+    {
+      "property_id": "SALE016",
+      "property_name": "Emerald Heights",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Row House",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 2017,
+      "carpet_area_sqft": 1492,
+      "price": 18600000,
+      "address": {
+        "locality": "Viman Nagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder B",
+      "rera_number": "P52100024029",
+      "loan_available": true,
+      "banks": [
+        "Bank of Baroda",
+        "Kotak",
+        "HDFC"
+      ],
+      "amenities": [
+        "Power Backup",
+        "Lift",
+        "Indoor Games",
+        "Garden",
+        "24x7 Security",
+        "EV Charging"
+      ],
+      "maintenance_per_month": 5315,
+      "available_units": 18,
+      "possession_date": "2028-03-02",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA008"
+    },
+    {
+      "property_id": "SALE017",
+      "property_name": "Royal Elite",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 839,
+      "carpet_area_sqft": 620,
+      "price": 20700000,
+      "address": {
+        "locality": "Viman Nagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder F",
+      "rera_number": "P52100027146",
+      "loan_available": true,
+      "banks": [
+        "Bank of Baroda",
+        "ICICI",
+        "HDFC"
+      ],
+      "amenities": [
+        "EV Charging",
+        "Children Play Area",
+        "Jogging Track",
+        "Lift",
+        "Visitor Parking",
+        "Yoga Deck"
+      ],
+      "maintenance_per_month": 2539,
+      "available_units": 9,
+      "possession_date": "2026-12-18",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA015"
+    },
+    {
+      "property_id": "SALE018",
+      "property_name": "Lake Towers",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Plot",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 2359,
+      "carpet_area_sqft": 1745,
+      "price": 13900000,
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder C",
+      "rera_number": "P52100015482",
+      "loan_available": true,
+      "banks": [
+        "ICICI",
+        "Bank of Baroda",
+        "SBI"
+      ],
+      "amenities": [
+        "Lift",
+        "24x7 Security",
+        "Garden",
+        "Co-working Space",
+        "Yoga Deck",
+        "Swimming Pool"
+      ],
+      "maintenance_per_month": 3948,
+      "available_units": 37,
+      "possession_date": "2027-11-22",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA010"
+    },
+    {
+      "property_id": "SALE019",
+      "property_name": "Royal Heights",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Row House",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 982,
+      "carpet_area_sqft": 726,
+      "price": 9000000,
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder G",
+      "rera_number": "P52100097806",
+      "loan_available": true,
+      "banks": [
+        "Bank of Baroda",
+        "HDFC",
+        "ICICI"
+      ],
+      "amenities": [
+        "Club House",
+        "Yoga Deck",
+        "EV Charging",
+        "Swimming Pool",
+        "Visitor Parking",
+        "Gym"
+      ],
+      "maintenance_per_month": 4427,
+      "available_units": 16,
+      "possession_date": "2027-04-24",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA014"
+    },
+    {
+      "property_id": "SALE020",
+      "property_name": "Skyline Heights",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Villa",
+      "configuration": "3 BHK",
+      "super_builtup_area_sqft": 1275,
+      "carpet_area_sqft": 943,
+      "price": 10300000,
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder G",
+      "rera_number": "P52100053025",
+      "loan_available": true,
+      "banks": [
+        "ICICI",
+        "SBI",
+        "Bank of Baroda"
+      ],
+      "amenities": [
+        "24x7 Security",
+        "Co-working Space",
+        "Jogging Track",
+        "Visitor Parking",
+        "CCTV",
+        "Yoga Deck"
+      ],
+      "maintenance_per_month": 3856,
+      "available_units": 3,
+      "possession_date": "2027-01-28",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA015"
+    },
+    {
+      "property_id": "SALE021",
+      "property_name": "Green Heights",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Plot",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 1839,
+      "carpet_area_sqft": 1360,
+      "price": 11200000,
+      "address": {
+        "locality": "Viman Nagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder F",
+      "rera_number": "P52100051114",
+      "loan_available": true,
+      "banks": [
+        "Axis",
+        "Kotak",
+        "SBI"
+      ],
+      "amenities": [
+        "Visitor Parking",
+        "Indoor Games",
+        "Garden",
+        "Power Backup",
+        "Gym",
+        "Lift"
+      ],
+      "maintenance_per_month": 2506,
+      "available_units": 35,
+      "possession_date": "2028-04-05",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA011"
+    },
+    {
+      "property_id": "SALE022",
+      "property_name": "Urban Elite",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Row House",
+      "configuration": "3 BHK",
+      "super_builtup_area_sqft": 1533,
+      "carpet_area_sqft": 1134,
+      "price": 6200000,
+      "address": {
+        "locality": "Kharadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder B",
+      "rera_number": "P52100049363",
+      "loan_available": true,
+      "banks": [
+        "Kotak",
+        "ICICI",
+        "Axis"
+      ],
+      "amenities": [
+        "24x7 Security",
+        "Visitor Parking",
+        "EV Charging",
+        "Power Backup",
+        "Jogging Track",
+        "Club House"
+      ],
+      "maintenance_per_month": 3285,
+      "available_units": 28,
+      "possession_date": "2028-08-12",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA007"
+    },
+    {
+      "property_id": "SALE023",
+      "property_name": "Green Elite",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Villa",
+      "configuration": "3 BHK",
+      "super_builtup_area_sqft": 1481,
+      "carpet_area_sqft": 1095,
+      "price": 18500000,
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder G",
+      "rera_number": "P52100086019",
+      "loan_available": true,
+      "banks": [
+        "Kotak",
+        "ICICI",
+        "Axis"
+      ],
+      "amenities": [
+        "Children Play Area",
+        "Lift",
+        "Co-working Space",
+        "Garden",
+        "Jogging Track",
+        "CCTV"
+      ],
+      "maintenance_per_month": 5751,
+      "available_units": 12,
+      "possession_date": "2028-08-06",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA002"
+    },
+    {
+      "property_id": "SALE024",
+      "property_name": "Urban Elite",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Villa",
+      "configuration": "3 BHK",
+      "super_builtup_area_sqft": 841,
+      "carpet_area_sqft": 622,
+      "price": 10500000,
+      "address": {
+        "locality": "Viman Nagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder C",
+      "rera_number": "P52100013201",
+      "loan_available": true,
+      "banks": [
+        "SBI",
+        "HDFC",
+        "Axis"
+      ],
+      "amenities": [
+        "Indoor Games",
+        "CCTV",
+        "Yoga Deck",
+        "Swimming Pool",
+        "Children Play Area",
+        "Visitor Parking"
+      ],
+      "maintenance_per_month": 5079,
+      "available_units": 38,
+      "possession_date": "2027-04-19",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA012"
+    },
+    {
+      "property_id": "SALE025",
+      "property_name": "Skyline Heights",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Plot",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 1468,
+      "carpet_area_sqft": 1086,
+      "price": 10700000,
+      "address": {
+        "locality": "Magarpatta",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder D",
+      "rera_number": "P52100033053",
+      "loan_available": true,
+      "banks": [
+        "Bank of Baroda",
+        "Kotak",
+        "Axis"
+      ],
+      "amenities": [
+        "Gym",
+        "Jogging Track",
+        "Garden",
+        "Swimming Pool",
+        "Children Play Area",
+        "Club House"
+      ],
+      "maintenance_per_month": 5782,
+      "available_units": 31,
+      "possession_date": "2028-08-15",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA009"
+    },
+    {
+      "property_id": "SALE026",
+      "property_name": "Lake Towers",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "3 BHK",
+      "super_builtup_area_sqft": 2196,
+      "carpet_area_sqft": 1625,
+      "price": 15800000,
+      "address": {
+        "locality": "Bavdhan",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder H",
+      "rera_number": "P52100030861",
+      "loan_available": true,
+      "banks": [
+        "Bank of Baroda",
+        "Axis",
+        "Kotak"
+      ],
+      "amenities": [
+        "Power Backup",
+        "Yoga Deck",
+        "Garden",
+        "Co-working Space",
+        "Lift",
+        "Jogging Track"
+      ],
+      "maintenance_per_month": 4484,
+      "available_units": 17,
+      "possession_date": "2027-07-10",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA008"
+    },
+    {
+      "property_id": "SALE027",
+      "property_name": "Emerald Elite",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Apartment",
+      "configuration": "3 BHK",
+      "super_builtup_area_sqft": 1130,
+      "carpet_area_sqft": 836,
+      "price": 11400000,
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder C",
+      "rera_number": "P52100029769",
+      "loan_available": true,
+      "banks": [
+        "HDFC",
+        "Axis",
+        "Bank of Baroda"
+      ],
+      "amenities": [
+        "EV Charging",
+        "Garden",
+        "Swimming Pool",
+        "Visitor Parking",
+        "Lift",
+        "24x7 Security"
+      ],
+      "maintenance_per_month": 4722,
+      "available_units": 31,
+      "possession_date": "2027-12-01",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA001"
+    },
+    {
+      "property_id": "SALE028",
+      "property_name": "Urban Heights",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Plot",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 1447,
+      "carpet_area_sqft": 1070,
+      "price": 19400000,
+      "address": {
+        "locality": "Kharadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder H",
+      "rera_number": "P52100010772",
+      "loan_available": true,
+      "banks": [
+        "ICICI",
+        "Bank of Baroda",
+        "Axis"
+      ],
+      "amenities": [
+        "CCTV",
+        "Lift",
+        "Visitor Parking",
+        "Jogging Track",
+        "EV Charging",
+        "Indoor Games"
+      ],
+      "maintenance_per_month": 3403,
+      "available_units": 33,
+      "possession_date": "2027-05-14",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA005"
+    },
+    {
+      "property_id": "SALE029",
+      "property_name": "Emerald Gardens",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Villa",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 709,
+      "carpet_area_sqft": 524,
+      "price": 14400000,
+      "address": {
+        "locality": "Magarpatta",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder H",
+      "rera_number": "P52100026728",
+      "loan_available": true,
+      "banks": [
+        "Kotak",
+        "Bank of Baroda",
+        "SBI"
+      ],
+      "amenities": [
+        "Lift",
+        "Visitor Parking",
+        "Indoor Games",
+        "Yoga Deck",
+        "Co-working Space",
+        "Gym"
+      ],
+      "maintenance_per_month": 2843,
+      "available_units": 29,
+      "possession_date": "2027-02-17",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA014"
+    },
+    {
+      "property_id": "SALE030",
+      "property_name": "Royal Elite",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Plot",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 752,
+      "carpet_area_sqft": 556,
+      "price": 11100000,
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder F",
+      "rera_number": "P52100054236",
+      "loan_available": true,
+      "banks": [
+        "Axis",
+        "ICICI",
+        "Bank of Baroda"
+      ],
+      "amenities": [
+        "Power Backup",
+        "CCTV",
+        "Swimming Pool",
+        "Children Play Area",
+        "Gym",
+        "Jogging Track"
+      ],
+      "maintenance_per_month": 2713,
+      "available_units": 24,
+      "possession_date": "2027-05-19",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA011"
+    },
+    {
+      "property_id": "SALE031",
+      "property_name": "Skyline Residency",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 2194,
+      "carpet_area_sqft": 1623,
+      "price": 5200000,
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder C",
+      "rera_number": "P52100041266",
+      "loan_available": true,
+      "banks": [
+        "HDFC",
+        "Axis",
+        "SBI"
+      ],
+      "amenities": [
+        "Indoor Games",
+        "Garden",
+        "Children Play Area",
+        "EV Charging",
+        "Power Backup",
+        "24x7 Security"
+      ],
+      "maintenance_per_month": 3187,
+      "available_units": 40,
+      "possession_date": "2028-06-14",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA012"
+    },
+    {
+      "property_id": "SALE032",
+      "property_name": "Lake Heights",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 1287,
+      "carpet_area_sqft": 952,
+      "price": 7200000,
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder G",
+      "rera_number": "P52100061990",
+      "loan_available": true,
+      "banks": [
+        "Bank of Baroda",
+        "HDFC",
+        "SBI"
+      ],
+      "amenities": [
+        "Indoor Games",
+        "EV Charging",
+        "Co-working Space",
+        "Garden",
+        "Swimming Pool",
+        "Power Backup"
+      ],
+      "maintenance_per_month": 5982,
+      "available_units": 40,
+      "possession_date": "2027-02-02",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA013"
+    },
+    {
+      "property_id": "SALE033",
+      "property_name": "Royal Elite",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 1361,
+      "carpet_area_sqft": 1007,
+      "price": 18100000,
+      "address": {
+        "locality": "Pimple Saudagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder F",
+      "rera_number": "P52100011658",
+      "loan_available": true,
+      "banks": [
+        "Axis",
+        "Bank of Baroda",
+        "SBI"
+      ],
+      "amenities": [
+        "Visitor Parking",
+        "24x7 Security",
+        "Co-working Space",
+        "Children Play Area",
+        "Club House",
+        "Lift"
+      ],
+      "maintenance_per_month": 3221,
+      "available_units": 35,
+      "possession_date": "2028-07-29",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA005"
+    },
+    {
+      "property_id": "SALE034",
+      "property_name": "Urban Towers",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Row House",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 1602,
+      "carpet_area_sqft": 1185,
+      "price": 15600000,
+      "address": {
+        "locality": "Pimple Saudagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder D",
+      "rera_number": "P52100021359",
+      "loan_available": true,
+      "banks": [
+        "ICICI",
+        "Axis",
+        "HDFC"
+      ],
+      "amenities": [
+        "Yoga Deck",
+        "Children Play Area",
+        "Indoor Games",
+        "Lift",
+        "Co-working Space",
+        "Visitor Parking"
+      ],
+      "maintenance_per_month": 3877,
+      "available_units": 3,
+      "possession_date": "2028-02-20",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA014"
+    },
+    {
+      "property_id": "SALE035",
+      "property_name": "Emerald Elite",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Row House",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 1648,
+      "carpet_area_sqft": 1219,
+      "price": 9900000,
+      "address": {
+        "locality": "Hadapsar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder J",
+      "rera_number": "P52100046211",
+      "loan_available": true,
+      "banks": [
+        "Kotak",
+        "SBI",
+        "HDFC"
+      ],
+      "amenities": [
+        "Swimming Pool",
+        "Garden",
+        "EV Charging",
+        "Visitor Parking",
+        "Children Play Area",
+        "Jogging Track"
+      ],
+      "maintenance_per_month": 5605,
+      "available_units": 17,
+      "possession_date": "2028-09-08",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA008"
+    },
+    {
+      "property_id": "SALE036",
+      "property_name": "Green Elite",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Plot",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 2273,
+      "carpet_area_sqft": 1682,
+      "price": 4900000,
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder D",
+      "rera_number": "P52100050135",
+      "loan_available": true,
+      "banks": [
+        "Bank of Baroda",
+        "Kotak",
+        "ICICI"
+      ],
+      "amenities": [
+        "Children Play Area",
+        "Jogging Track",
+        "CCTV",
+        "24x7 Security",
+        "Visitor Parking",
+        "Yoga Deck"
+      ],
+      "maintenance_per_month": 3854,
+      "available_units": 24,
+      "possession_date": "2028-09-20",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA008"
+    },
+    {
+      "property_id": "SALE037",
+      "property_name": "Green Residency",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "3 BHK",
+      "super_builtup_area_sqft": 1164,
+      "carpet_area_sqft": 861,
+      "price": 10400000,
+      "address": {
+        "locality": "Viman Nagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder I",
+      "rera_number": "P52100034267",
+      "loan_available": true,
+      "banks": [
+        "HDFC",
+        "Bank of Baroda",
+        "Axis"
+      ],
+      "amenities": [
+        "Power Backup",
+        "EV Charging",
+        "Indoor Games",
+        "Jogging Track",
+        "Yoga Deck",
+        "Lift"
+      ],
+      "maintenance_per_month": 2911,
+      "available_units": 14,
+      "possession_date": "2027-08-01",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA004"
+    },
+    {
+      "property_id": "SALE038",
+      "property_name": "Urban Towers",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Row House",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 1269,
+      "carpet_area_sqft": 939,
+      "price": 4800000,
+      "address": {
+        "locality": "Hadapsar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder A",
+      "rera_number": "P52100017146",
+      "loan_available": true,
+      "banks": [
+        "Kotak",
+        "ICICI",
+        "HDFC"
+      ],
+      "amenities": [
+        "Co-working Space",
+        "CCTV",
+        "Yoga Deck",
+        "Children Play Area",
+        "Swimming Pool",
+        "Gym"
+      ],
+      "maintenance_per_month": 4851,
+      "available_units": 20,
+      "possession_date": "2028-01-25",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA008"
+    },
+    {
+      "property_id": "SALE039",
+      "property_name": "Emerald Gardens",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "3 BHK",
+      "super_builtup_area_sqft": 1027,
+      "carpet_area_sqft": 759,
+      "price": 5800000,
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder G",
+      "rera_number": "P52100074454",
+      "loan_available": true,
+      "banks": [
+        "SBI",
+        "Kotak",
+        "Bank of Baroda"
+      ],
+      "amenities": [
+        "Club House",
+        "Lift",
+        "Yoga Deck",
+        "Indoor Games",
+        "Power Backup",
+        "Swimming Pool"
+      ],
+      "maintenance_per_month": 3516,
+      "available_units": 9,
+      "possession_date": "2028-04-25",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA013"
+    },
+    {
+      "property_id": "SALE040",
+      "property_name": "Royal Gardens",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Row House",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 2238,
+      "carpet_area_sqft": 1656,
+      "price": 17800000,
+      "address": {
+        "locality": "Magarpatta",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder J",
+      "rera_number": "P52100066207",
+      "loan_available": true,
+      "banks": [
+        "ICICI",
+        "Kotak",
+        "SBI"
+      ],
+      "amenities": [
+        "Indoor Games",
+        "EV Charging",
+        "Swimming Pool",
+        "Garden",
+        "Co-working Space",
+        "CCTV"
+      ],
+      "maintenance_per_month": 3583,
+      "available_units": 7,
+      "possession_date": "2027-03-11",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA004"
+    },
+    {
+      "property_id": "SALE041",
+      "property_name": "Royal Gardens",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Office",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 970,
+      "carpet_area_sqft": 717,
+      "price": 4500000,
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder H",
+      "rera_number": "P52100048175",
+      "loan_available": true,
+      "banks": [
+        "SBI",
+        "HDFC",
+        "ICICI"
+      ],
+      "amenities": [
+        "EV Charging",
+        "Power Backup",
+        "Lift",
+        "Children Play Area",
+        "Swimming Pool",
+        "Garden"
+      ],
+      "maintenance_per_month": 3583,
+      "available_units": 39,
+      "possession_date": "2028-08-09",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA013"
+    },
+    {
+      "property_id": "SALE042",
+      "property_name": "Skyline Residency",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Villa",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 885,
+      "carpet_area_sqft": 654,
+      "price": 18400000,
+      "address": {
+        "locality": "Kharadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder B",
+      "rera_number": "P52100017816",
+      "loan_available": true,
+      "banks": [
+        "HDFC",
+        "ICICI",
+        "Kotak"
+      ],
+      "amenities": [
+        "Children Play Area",
+        "Swimming Pool",
+        "Lift",
+        "EV Charging",
+        "Power Backup",
+        "Visitor Parking"
+      ],
+      "maintenance_per_month": 3615,
+      "available_units": 34,
+      "possession_date": "2028-04-06",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA008"
+    },
+    {
+      "property_id": "SALE043",
+      "property_name": "Royal Elite",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Row House",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 1874,
+      "carpet_area_sqft": 1386,
+      "price": 5500000,
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder A",
+      "rera_number": "P52100021970",
+      "loan_available": true,
+      "banks": [
+        "HDFC",
+        "Kotak",
+        "SBI"
+      ],
+      "amenities": [
+        "Yoga Deck",
+        "Co-working Space",
+        "Power Backup",
+        "Indoor Games",
+        "Gym",
+        "Club House"
+      ],
+      "maintenance_per_month": 4427,
+      "available_units": 35,
+      "possession_date": "2028-07-30",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA008"
+    },
+    {
+      "property_id": "SALE044",
+      "property_name": "Urban Gardens",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Plot",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 1848,
+      "carpet_area_sqft": 1367,
+      "price": 15600000,
+      "address": {
+        "locality": "Viman Nagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder F",
+      "rera_number": "P52100063523",
+      "loan_available": true,
+      "banks": [
+        "ICICI",
+        "Bank of Baroda",
+        "SBI"
+      ],
+      "amenities": [
+        "CCTV",
+        "Club House",
+        "24x7 Security",
+        "Visitor Parking",
+        "Children Play Area",
+        "Power Backup"
+      ],
+      "maintenance_per_month": 5213,
+      "available_units": 27,
+      "possession_date": "2028-11-18",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA009"
+    },
+    {
+      "property_id": "SALE045",
+      "property_name": "Emerald Elite",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Plot",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 830,
+      "carpet_area_sqft": 614,
+      "price": 12500000,
+      "address": {
+        "locality": "Baner",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder I",
+      "rera_number": "P52100010150",
+      "loan_available": true,
+      "banks": [
+        "Bank of Baroda",
+        "Kotak",
+        "Axis"
+      ],
+      "amenities": [
+        "Visitor Parking",
+        "Gym",
+        "Garden",
+        "Jogging Track",
+        "24x7 Security",
+        "Indoor Games"
+      ],
+      "maintenance_per_month": 5598,
+      "available_units": 33,
+      "possession_date": "2028-07-03",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA008"
+    },
+    {
+      "property_id": "SALE046",
+      "property_name": "Skyline Elite",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Plot",
+      "configuration": "2 BHK",
+      "super_builtup_area_sqft": 1196,
+      "carpet_area_sqft": 885,
+      "price": 18500000,
+      "address": {
+        "locality": "Baner",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder B",
+      "rera_number": "P52100013783",
+      "loan_available": true,
+      "banks": [
+        "Bank of Baroda",
+        "Kotak",
+        "HDFC"
+      ],
+      "amenities": [
+        "EV Charging",
+        "Club House",
+        "Power Backup",
+        "Jogging Track",
+        "Gym",
+        "Lift"
+      ],
+      "maintenance_per_month": 4171,
+      "available_units": 7,
+      "possession_date": "2027-05-20",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA014"
+    },
+    {
+      "property_id": "SALE047",
+      "property_name": "Skyline Gardens",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Row House",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 890,
+      "carpet_area_sqft": 658,
+      "price": 21000000,
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder I",
+      "rera_number": "P52100045838",
+      "loan_available": true,
+      "banks": [
+        "Axis",
+        "Bank of Baroda",
+        "Kotak"
+      ],
+      "amenities": [
+        "Garden",
+        "Children Play Area",
+        "Jogging Track",
+        "Club House",
+        "Visitor Parking",
+        "Lift"
+      ],
+      "maintenance_per_month": 4955,
+      "available_units": 34,
+      "possession_date": "2028-11-04",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA015"
+    },
+    {
+      "property_id": "SALE048",
+      "property_name": "Emerald Towers",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "1 BHK",
+      "super_builtup_area_sqft": 1215,
+      "carpet_area_sqft": 899,
+      "price": 15100000,
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder E",
+      "rera_number": "P52100049132",
+      "loan_available": true,
+      "banks": [
+        "Kotak",
+        "Bank of Baroda",
+        "Axis"
+      ],
+      "amenities": [
+        "CCTV",
+        "Club House",
+        "Children Play Area",
+        "Jogging Track",
+        "Yoga Deck",
+        "24x7 Security"
+      ],
+      "maintenance_per_month": 3861,
+      "available_units": 37,
+      "possession_date": "2028-11-21",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA009"
+    },
+    {
+      "property_id": "SALE049",
+      "property_name": "Urban Residency",
+      "listing_type": "Sale",
+      "status": "Reserved",
+      "property_type": "Plot",
+      "configuration": "4 BHK",
+      "super_builtup_area_sqft": 1309,
+      "carpet_area_sqft": 968,
+      "price": 9300000,
+      "address": {
+        "locality": "Magarpatta",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder D",
+      "rera_number": "P52100063841",
+      "loan_available": true,
+      "banks": [
+        "SBI",
+        "ICICI",
+        "Axis"
+      ],
+      "amenities": [
+        "EV Charging",
+        "Yoga Deck",
+        "Visitor Parking",
+        "CCTV",
+        "Co-working Space",
+        "Club House"
+      ],
+      "maintenance_per_month": 4528,
+      "available_units": 4,
+      "possession_date": "2027-02-08",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA009"
+    },
+    {
+      "property_id": "SALE050",
+      "property_name": "Green Towers",
+      "listing_type": "Sale",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "3 BHK",
+      "super_builtup_area_sqft": 855,
+      "carpet_area_sqft": 632,
+      "price": 15700000,
+      "address": {
+        "locality": "Pimple Saudagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "builder": "Builder C",
+      "rera_number": "P52100063736",
+      "loan_available": true,
+      "banks": [
+        "Bank of Baroda",
+        "HDFC",
+        "SBI"
+      ],
+      "amenities": [
+        "Children Play Area",
+        "Yoga Deck",
+        "Power Backup",
+        "24x7 Security",
+        "Indoor Games",
+        "Visitor Parking"
+      ],
+      "maintenance_per_month": 5161,
+      "available_units": 7,
+      "possession_date": "2027-09-03",
+      "description": "Well-connected project close to schools, hospitals, IT parks and shopping centres.",
+      "assigned_agent": "SA014"
+    }
+  ],
+  "rental_properties": [
+    {
+      "property_id": "RENT001",
+      "property_name": "Silver Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Shop",
+      "configuration": "1 RK",
+      "monthly_rent": 64808,
+      "security_deposit": 194424,
+      "maintenance": 3529,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Students",
+        "Working Professionals"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-18",
+      "address": {
+        "locality": "Bavdhan",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "EV Charging",
+        "Swimming Pool",
+        "Visitor Parking",
+        "CCTV",
+        "Co-working Space"
+      ],
+      "assigned_agent": "RA002"
+    },
+    {
+      "property_id": "RENT002",
+      "property_name": "Silver Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "2 BHK",
+      "monthly_rent": 36805,
+      "security_deposit": 110415,
+      "maintenance": 1229,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Students"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-13",
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Garden",
+        "Jogging Track",
+        "Visitor Parking",
+        "Indoor Games",
+        "Co-working Space"
+      ],
+      "assigned_agent": "RA003"
+    },
+    {
+      "property_id": "RENT003",
+      "property_name": "Maple Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Shop",
+      "configuration": "1 BHK",
+      "monthly_rent": 37946,
+      "security_deposit": 113838,
+      "maintenance": 3038,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Students",
+        "Family"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-08-13",
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Power Backup",
+        "Children Play Area",
+        "Lift",
+        "Co-working Space",
+        "Gym"
+      ],
+      "assigned_agent": "RA008"
+    },
+    {
+      "property_id": "RENT004",
+      "property_name": "Maple Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Studio",
+      "configuration": "2 BHK",
+      "monthly_rent": 35706,
+      "security_deposit": 107118,
+      "maintenance": 3617,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Students"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-16",
+      "address": {
+        "locality": "Viman Nagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Visitor Parking",
+        "CCTV",
+        "Children Play Area",
+        "Swimming Pool",
+        "Garden"
+      ],
+      "assigned_agent": "RA007"
+    },
+    {
+      "property_id": "RENT005",
+      "property_name": "Cedar Homes",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Studio",
+      "configuration": "1 RK",
+      "monthly_rent": 62049,
+      "security_deposit": 186147,
+      "maintenance": 3696,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Family"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-08-31",
+      "address": {
+        "locality": "Pimple Saudagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Indoor Games",
+        "EV Charging",
+        "Children Play Area",
+        "Power Backup",
+        "Garden"
+      ],
+      "assigned_agent": "RA010"
+    },
+    {
+      "property_id": "RENT006",
+      "property_name": "Sunrise Homes",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Villa",
+      "configuration": "1 RK",
+      "monthly_rent": 43705,
+      "security_deposit": 131115,
+      "maintenance": 3570,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Family",
+        "Students"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-06",
+      "address": {
+        "locality": "Hadapsar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Indoor Games",
+        "24x7 Security",
+        "EV Charging",
+        "Club House",
+        "Swimming Pool"
+      ],
+      "assigned_agent": "RA005"
+    },
+    {
+      "property_id": "RENT007",
+      "property_name": "Sunrise Elite",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Villa",
+      "configuration": "2 BHK",
+      "monthly_rent": 69460,
+      "security_deposit": 208380,
+      "maintenance": 3174,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Family"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-08-31",
+      "address": {
+        "locality": "Hadapsar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "CCTV",
+        "Children Play Area",
+        "Yoga Deck",
+        "Power Backup",
+        "24x7 Security"
+      ],
+      "assigned_agent": "RA002"
+    },
+    {
+      "property_id": "RENT008",
+      "property_name": "Sunrise Elite",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "2 BHK",
+      "monthly_rent": 24869,
+      "security_deposit": 74607,
+      "maintenance": 1369,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Family",
+        "Students"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-08-02",
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "24x7 Security",
+        "Co-working Space",
+        "EV Charging",
+        "CCTV",
+        "Power Backup"
+      ],
+      "assigned_agent": "RA010"
+    },
+    {
+      "property_id": "RENT009",
+      "property_name": "Maple Elite",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "1 RK",
+      "monthly_rent": 63689,
+      "security_deposit": 191067,
+      "maintenance": 3537,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Bachelors"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-08-14",
+      "address": {
+        "locality": "Magarpatta",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Swimming Pool",
+        "Co-working Space",
+        "Children Play Area",
+        "EV Charging",
+        "Power Backup"
+      ],
+      "assigned_agent": "RA007"
+    },
+    {
+      "property_id": "RENT010",
+      "property_name": "Maple Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Studio",
+      "configuration": "3 BHK",
+      "monthly_rent": 33320,
+      "security_deposit": 99960,
+      "maintenance": 1475,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Students",
+        "Working Professionals"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-07-28",
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Children Play Area",
+        "24x7 Security",
+        "Co-working Space",
+        "EV Charging",
+        "Jogging Track"
+      ],
+      "assigned_agent": "RA007"
+    },
+    {
+      "property_id": "RENT011",
+      "property_name": "Palm Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "3 BHK",
+      "monthly_rent": 35253,
+      "security_deposit": 105759,
+      "maintenance": 2145,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Family"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-08-01",
+      "address": {
+        "locality": "Pimple Saudagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Garden",
+        "CCTV",
+        "24x7 Security",
+        "Swimming Pool",
+        "Co-working Space"
+      ],
+      "assigned_agent": "RA006"
+    },
+    {
+      "property_id": "RENT012",
+      "property_name": "Maple Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Studio",
+      "configuration": "1 BHK",
+      "monthly_rent": 62012,
+      "security_deposit": 186036,
+      "maintenance": 1500,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Family",
+        "Working Professionals"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-08-14",
+      "address": {
+        "locality": "Bavdhan",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Co-working Space",
+        "Indoor Games",
+        "Gym",
+        "Yoga Deck",
+        "24x7 Security"
+      ],
+      "assigned_agent": "RA004"
+    },
+    {
+      "property_id": "RENT013",
+      "property_name": "Maple Elite",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Shop",
+      "configuration": "1 BHK",
+      "monthly_rent": 41896,
+      "security_deposit": 125688,
+      "maintenance": 1954,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Students",
+        "Working Professionals"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-07-21",
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "CCTV",
+        "Club House",
+        "Lift",
+        "Jogging Track",
+        "Power Backup"
+      ],
+      "assigned_agent": "RA003"
+    },
+    {
+      "property_id": "RENT014",
+      "property_name": "Sunrise Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Studio",
+      "configuration": "1 BHK",
+      "monthly_rent": 18379,
+      "security_deposit": 55137,
+      "maintenance": 3411,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Family",
+        "Bachelors"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-07",
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Club House",
+        "EV Charging",
+        "Visitor Parking",
+        "Jogging Track",
+        "Swimming Pool"
+      ],
+      "assigned_agent": "RA002"
+    },
+    {
+      "property_id": "RENT015",
+      "property_name": "Silver Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "1 BHK",
+      "monthly_rent": 73756,
+      "security_deposit": 221268,
+      "maintenance": 3519,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Students"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-07-07",
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Children Play Area",
+        "CCTV",
+        "Visitor Parking",
+        "Yoga Deck",
+        "Co-working Space"
+      ],
+      "assigned_agent": "RA002"
+    },
+    {
+      "property_id": "RENT016",
+      "property_name": "Maple Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Studio",
+      "configuration": "1 BHK",
+      "monthly_rent": 73138,
+      "security_deposit": 219414,
+      "maintenance": 1269,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Bachelors"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-28",
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Indoor Games",
+        "Jogging Track",
+        "Power Backup",
+        "Children Play Area",
+        "CCTV"
+      ],
+      "assigned_agent": "RA010"
+    },
+    {
+      "property_id": "RENT017",
+      "property_name": "Maple Elite",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "3 BHK",
+      "monthly_rent": 27999,
+      "security_deposit": 83997,
+      "maintenance": 1935,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Students"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-30",
+      "address": {
+        "locality": "Magarpatta",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "EV Charging",
+        "Swimming Pool",
+        "24x7 Security",
+        "Visitor Parking",
+        "Yoga Deck"
+      ],
+      "assigned_agent": "RA005"
+    },
+    {
+      "property_id": "RENT018",
+      "property_name": "Palm Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "1 RK",
+      "monthly_rent": 35006,
+      "security_deposit": 105018,
+      "maintenance": 1381,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Family",
+        "Working Professionals"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-08-24",
+      "address": {
+        "locality": "Hadapsar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Club House",
+        "Jogging Track",
+        "Gym",
+        "Indoor Games",
+        "CCTV"
+      ],
+      "assigned_agent": "RA009"
+    },
+    {
+      "property_id": "RENT019",
+      "property_name": "Palm Homes",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "1 RK",
+      "monthly_rent": 31021,
+      "security_deposit": 93063,
+      "maintenance": 2178,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Students"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-08-09",
+      "address": {
+        "locality": "Hadapsar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Jogging Track",
+        "Garden",
+        "Club House",
+        "Co-working Space",
+        "Children Play Area"
+      ],
+      "assigned_agent": "RA004"
+    },
+    {
+      "property_id": "RENT020",
+      "property_name": "Cedar Homes",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "2 BHK",
+      "monthly_rent": 60890,
+      "security_deposit": 182670,
+      "maintenance": 3351,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Bachelors",
+        "Working Professionals"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-08-11",
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Lift",
+        "Co-working Space",
+        "EV Charging",
+        "Power Backup",
+        "Gym"
+      ],
+      "assigned_agent": "RA003"
+    },
+    {
+      "property_id": "RENT021",
+      "property_name": "Silver Homes",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "1 BHK",
+      "monthly_rent": 55499,
+      "security_deposit": 166497,
+      "maintenance": 1586,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Bachelors",
+        "Family"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-08-20",
+      "address": {
+        "locality": "Viman Nagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Co-working Space",
+        "Gym",
+        "Swimming Pool",
+        "EV Charging",
+        "Jogging Track"
+      ],
+      "assigned_agent": "RA004"
+    },
+    {
+      "property_id": "RENT022",
+      "property_name": "Palm Homes",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Villa",
+      "configuration": "2 BHK",
+      "monthly_rent": 70028,
+      "security_deposit": 210084,
+      "maintenance": 2276,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Bachelors"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-08-29",
+      "address": {
+        "locality": "Magarpatta",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Gym",
+        "Club House",
+        "CCTV",
+        "Indoor Games",
+        "Lift"
+      ],
+      "assigned_agent": "RA002"
+    },
+    {
+      "property_id": "RENT023",
+      "property_name": "Palm Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Shop",
+      "configuration": "3 BHK",
+      "monthly_rent": 73079,
+      "security_deposit": 219237,
+      "maintenance": 2696,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Students",
+        "Working Professionals"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-07-26",
+      "address": {
+        "locality": "Viman Nagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Visitor Parking",
+        "Swimming Pool",
+        "Power Backup",
+        "Co-working Space",
+        "EV Charging"
+      ],
+      "assigned_agent": "RA010"
+    },
+    {
+      "property_id": "RENT024",
+      "property_name": "Silver Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Villa",
+      "configuration": "3 BHK",
+      "monthly_rent": 84066,
+      "security_deposit": 252198,
+      "maintenance": 3454,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Family",
+        "Bachelors"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-09-02",
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Garden",
+        "Yoga Deck",
+        "Club House",
+        "Power Backup",
+        "EV Charging"
+      ],
+      "assigned_agent": "RA006"
+    },
+    {
+      "property_id": "RENT025",
+      "property_name": "Palm Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Villa",
+      "configuration": "1 BHK",
+      "monthly_rent": 16013,
+      "security_deposit": 48039,
+      "maintenance": 2557,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Students",
+        "Working Professionals"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-08",
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Visitor Parking",
+        "CCTV",
+        "EV Charging",
+        "Gym",
+        "Lift"
+      ],
+      "assigned_agent": "RA001"
+    },
+    {
+      "property_id": "RENT026",
+      "property_name": "Silver Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Shop",
+      "configuration": "3 BHK",
+      "monthly_rent": 25205,
+      "security_deposit": 75615,
+      "maintenance": 3906,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Bachelors",
+        "Students"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-07-29",
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Gym",
+        "24x7 Security",
+        "Club House",
+        "Indoor Games",
+        "Children Play Area"
+      ],
+      "assigned_agent": "RA006"
+    },
+    {
+      "property_id": "RENT027",
+      "property_name": "Maple Elite",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "3 BHK",
+      "monthly_rent": 72240,
+      "security_deposit": 216720,
+      "maintenance": 3146,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Bachelors",
+        "Students"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-18",
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "24x7 Security",
+        "Yoga Deck",
+        "Club House",
+        "Swimming Pool",
+        "Jogging Track"
+      ],
+      "assigned_agent": "RA002"
+    },
+    {
+      "property_id": "RENT028",
+      "property_name": "Sunrise Homes",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Studio",
+      "configuration": "1 BHK",
+      "monthly_rent": 81840,
+      "security_deposit": 245520,
+      "maintenance": 1967,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Students",
+        "Bachelors"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-07-15",
+      "address": {
+        "locality": "Bavdhan",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Indoor Games",
+        "Club House",
+        "Yoga Deck",
+        "Co-working Space",
+        "Swimming Pool"
+      ],
+      "assigned_agent": "RA003"
+    },
+    {
+      "property_id": "RENT029",
+      "property_name": "Cedar Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Shop",
+      "configuration": "2 BHK",
+      "monthly_rent": 75811,
+      "security_deposit": 227433,
+      "maintenance": 3569,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Students",
+        "Bachelors"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-08-03",
+      "address": {
+        "locality": "Balewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Children Play Area",
+        "Co-working Space",
+        "Power Backup",
+        "Yoga Deck",
+        "Indoor Games"
+      ],
+      "assigned_agent": "RA001"
+    },
+    {
+      "property_id": "RENT030",
+      "property_name": "Maple Homes",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "3 BHK",
+      "monthly_rent": 81497,
+      "security_deposit": 244491,
+      "maintenance": 1154,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Students"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-08-14",
+      "address": {
+        "locality": "Hadapsar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "CCTV",
+        "Lift",
+        "Swimming Pool",
+        "Indoor Games",
+        "EV Charging"
+      ],
+      "assigned_agent": "RA009"
+    },
+    {
+      "property_id": "RENT031",
+      "property_name": "Cedar Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "1 BHK",
+      "monthly_rent": 75648,
+      "security_deposit": 226944,
+      "maintenance": 2316,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Bachelors",
+        "Working Professionals"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-07-07",
+      "address": {
+        "locality": "Magarpatta",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Children Play Area",
+        "Swimming Pool",
+        "Yoga Deck",
+        "24x7 Security",
+        "CCTV"
+      ],
+      "assigned_agent": "RA009"
+    },
+    {
+      "property_id": "RENT032",
+      "property_name": "Sunrise Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "1 BHK",
+      "monthly_rent": 20130,
+      "security_deposit": 60390,
+      "maintenance": 2490,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Students"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-08-22",
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "24x7 Security",
+        "Co-working Space",
+        "Indoor Games",
+        "Gym",
+        "CCTV"
+      ],
+      "assigned_agent": "RA006"
+    },
+    {
+      "property_id": "RENT033",
+      "property_name": "Maple Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Studio",
+      "configuration": "2 BHK",
+      "monthly_rent": 58213,
+      "security_deposit": 174639,
+      "maintenance": 3964,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Students",
+        "Bachelors"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-08-10",
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Co-working Space",
+        "Club House",
+        "24x7 Security",
+        "Power Backup",
+        "Lift"
+      ],
+      "assigned_agent": "RA007"
+    },
+    {
+      "property_id": "RENT034",
+      "property_name": "Silver Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Studio",
+      "configuration": "1 BHK",
+      "monthly_rent": 26104,
+      "security_deposit": 78312,
+      "maintenance": 3744,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Family",
+        "Working Professionals"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-08-05",
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "24x7 Security",
+        "Gym",
+        "Lift",
+        "Power Backup",
+        "Club House"
+      ],
+      "assigned_agent": "RA004"
+    },
+    {
+      "property_id": "RENT035",
+      "property_name": "Sunrise Elite",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Villa",
+      "configuration": "1 BHK",
+      "monthly_rent": 78736,
+      "security_deposit": 236208,
+      "maintenance": 1316,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Family",
+        "Working Professionals"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-08-15",
+      "address": {
+        "locality": "Hadapsar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "24x7 Security",
+        "Yoga Deck",
+        "Indoor Games",
+        "Club House",
+        "CCTV"
+      ],
+      "assigned_agent": "RA007"
+    },
+    {
+      "property_id": "RENT036",
+      "property_name": "Sunrise Elite",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "1 RK",
+      "monthly_rent": 36266,
+      "security_deposit": 108798,
+      "maintenance": 2682,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Students",
+        "Bachelors"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-08-21",
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "EV Charging",
+        "Yoga Deck",
+        "Children Play Area",
+        "Garden",
+        "Jogging Track"
+      ],
+      "assigned_agent": "RA004"
+    },
+    {
+      "property_id": "RENT037",
+      "property_name": "Sunrise Homes",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Shop",
+      "configuration": "3 BHK",
+      "monthly_rent": 76474,
+      "security_deposit": 229422,
+      "maintenance": 2891,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Bachelors",
+        "Working Professionals"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-14",
+      "address": {
+        "locality": "Viman Nagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "CCTV",
+        "Garden",
+        "Yoga Deck",
+        "Indoor Games",
+        "Club House"
+      ],
+      "assigned_agent": "RA005"
+    },
+    {
+      "property_id": "RENT038",
+      "property_name": "Silver Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Shop",
+      "configuration": "1 RK",
+      "monthly_rent": 77991,
+      "security_deposit": 233973,
+      "maintenance": 2167,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Students",
+        "Bachelors"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-08-30",
+      "address": {
+        "locality": "Baner",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Jogging Track",
+        "Club House",
+        "Visitor Parking",
+        "Swimming Pool",
+        "Garden"
+      ],
+      "assigned_agent": "RA008"
+    },
+    {
+      "property_id": "RENT039",
+      "property_name": "Palm Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "2 BHK",
+      "monthly_rent": 18495,
+      "security_deposit": 55485,
+      "maintenance": 1965,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Family",
+        "Students"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-07-05",
+      "address": {
+        "locality": "Hadapsar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "24x7 Security",
+        "Swimming Pool",
+        "EV Charging",
+        "Co-working Space",
+        "Lift"
+      ],
+      "assigned_agent": "RA003"
+    },
+    {
+      "property_id": "RENT040",
+      "property_name": "Silver Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Villa",
+      "configuration": "3 BHK",
+      "monthly_rent": 20020,
+      "security_deposit": 60060,
+      "maintenance": 2837,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Family",
+        "Bachelors"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-07-20",
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Garden",
+        "CCTV",
+        "Club House",
+        "Jogging Track",
+        "Indoor Games"
+      ],
+      "assigned_agent": "RA009"
+    },
+    {
+      "property_id": "RENT041",
+      "property_name": "Silver Elite",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Studio",
+      "configuration": "1 RK",
+      "monthly_rent": 29573,
+      "security_deposit": 88719,
+      "maintenance": 1195,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Bachelors",
+        "Working Professionals"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-08",
+      "address": {
+        "locality": "Magarpatta",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Swimming Pool",
+        "CCTV",
+        "Children Play Area",
+        "Indoor Games",
+        "Jogging Track"
+      ],
+      "assigned_agent": "RA001"
+    },
+    {
+      "property_id": "RENT042",
+      "property_name": "Sunrise Homes",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "1 RK",
+      "monthly_rent": 46711,
+      "security_deposit": 140133,
+      "maintenance": 3518,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Students",
+        "Working Professionals"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-15",
+      "address": {
+        "locality": "Bavdhan",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Co-working Space",
+        "Lift",
+        "Swimming Pool",
+        "Jogging Track",
+        "24x7 Security"
+      ],
+      "assigned_agent": "RA002"
+    },
+    {
+      "property_id": "RENT043",
+      "property_name": "Cedar Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Office",
+      "configuration": "3 BHK",
+      "monthly_rent": 81496,
+      "security_deposit": 244488,
+      "maintenance": 1178,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Bachelors",
+        "Students"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-08-20",
+      "address": {
+        "locality": "Bavdhan",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Gym",
+        "24x7 Security",
+        "Yoga Deck",
+        "Swimming Pool",
+        "CCTV"
+      ],
+      "assigned_agent": "RA004"
+    },
+    {
+      "property_id": "RENT044",
+      "property_name": "Sunrise Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Studio",
+      "configuration": "2 BHK",
+      "monthly_rent": 58583,
+      "security_deposit": 175749,
+      "maintenance": 3632,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Bachelors",
+        "Working Professionals"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-08-13",
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Club House",
+        "Yoga Deck",
+        "Lift",
+        "Swimming Pool",
+        "Children Play Area"
+      ],
+      "assigned_agent": "RA001"
+    },
+    {
+      "property_id": "RENT045",
+      "property_name": "Maple Elite",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "2 BHK",
+      "monthly_rent": 41422,
+      "security_deposit": 124266,
+      "maintenance": 2270,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Bachelors",
+        "Working Professionals"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-20",
+      "address": {
+        "locality": "Viman Nagar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Gym",
+        "Yoga Deck",
+        "Co-working Space",
+        "Garden",
+        "Power Backup"
+      ],
+      "assigned_agent": "RA006"
+    },
+    {
+      "property_id": "RENT046",
+      "property_name": "Silver Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Studio",
+      "configuration": "3 BHK",
+      "monthly_rent": 58506,
+      "security_deposit": 175518,
+      "maintenance": 2638,
+      "furnishing": "Unfurnished",
+      "preferred_tenants": [
+        "Bachelors",
+        "Students"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-15",
+      "address": {
+        "locality": "Baner",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Children Play Area",
+        "EV Charging",
+        "Lift",
+        "24x7 Security",
+        "Jogging Track"
+      ],
+      "assigned_agent": "RA005"
+    },
+    {
+      "property_id": "RENT047",
+      "property_name": "Maple Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Shop",
+      "configuration": "1 BHK",
+      "monthly_rent": 70640,
+      "security_deposit": 211920,
+      "maintenance": 3234,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Family"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-07-24",
+      "address": {
+        "locality": "Wakad",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Co-working Space",
+        "Power Backup",
+        "CCTV",
+        "Children Play Area",
+        "Indoor Games"
+      ],
+      "assigned_agent": "RA007"
+    },
+    {
+      "property_id": "RENT048",
+      "property_name": "Silver Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "2 BHK",
+      "monthly_rent": 73183,
+      "security_deposit": 219549,
+      "maintenance": 3518,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Bachelors"
+      ],
+      "pets_allowed": true,
+      "available_from": "2026-07-08",
+      "address": {
+        "locality": "Hinjewadi",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Co-working Space",
+        "Lift",
+        "Visitor Parking",
+        "24x7 Security",
+        "Jogging Track"
+      ],
+      "assigned_agent": "RA003"
+    },
+    {
+      "property_id": "RENT049",
+      "property_name": "Cedar Nest",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Apartment",
+      "configuration": "1 BHK",
+      "monthly_rent": 33714,
+      "security_deposit": 101142,
+      "maintenance": 1275,
+      "furnishing": "Fully Furnished",
+      "preferred_tenants": [
+        "Working Professionals",
+        "Students"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-09-02",
+      "address": {
+        "locality": "Baner",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Indoor Games",
+        "Gym",
+        "Lift",
+        "Club House",
+        "Co-working Space"
+      ],
+      "assigned_agent": "RA008"
+    },
+    {
+      "property_id": "RENT050",
+      "property_name": "Palm Residency",
+      "listing_type": "Rent",
+      "status": "Available",
+      "property_type": "Shop",
+      "configuration": "1 BHK",
+      "monthly_rent": 63760,
+      "security_deposit": 191280,
+      "maintenance": 3168,
+      "furnishing": "Semi Furnished",
+      "preferred_tenants": [
+        "Bachelors",
+        "Students"
+      ],
+      "pets_allowed": false,
+      "available_from": "2026-07-19",
+      "address": {
+        "locality": "Hadapsar",
+        "city": "Pune",
+        "state": "Maharashtra"
+      },
+      "amenities": [
+        "Swimming Pool",
+        "Gym",
+        "EV Charging",
+        "Club House",
+        "Children Play Area"
+      ],
+      "assigned_agent": "RA009"
+    }
+  ],
+  "policies": {
+    "booking_amount": "10%",
+    "brokerage_sale": "1%",
+    "brokerage_rent": "One month rent",
+    "virtual_tours": true,
+    "site_visits": true
+  },
+  "faqs": [
+    {
+      "question": "Do you provide home loan assistance?",
+      "answer": "Yes, through partner banks."
+    },
+    {
+      "question": "Can I schedule a site visit?",
+      "answer": "Yes, any day during working hours."
+    },
+    {
+      "question": "Are pets allowed in rentals?",
+      "answer": "Depends on the property."
+    },
+    {
+      "question": "Do you help with registration?",
+      "answer": "Yes, end-to-end assistance is available."
+    },
+    {
+      "question": "Is brokerage applicable?",
+      "answer": "Sale: 1%, Rent: One month's rent."
+    }
+  ]
+}

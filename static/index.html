@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeNest Realty — AI Property Assistant</title>
+    <meta name="description" content="Find your dream property in Pune with PrimeNest Realty's AI-powered chatbot. Search apartments, villas, plots, and rentals across Baner, Hinjewadi, Kharadi, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+    <div class="app-container">
+
+        <!-- Sidebar Overlay (mobile) -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- ═══ SIDEBAR ═══ -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Brand -->
+            <div class="sidebar-brand">
+                <div class="brand-logo">
+                    <div class="brand-icon">🏠</div>
+                    <span class="brand-name">PrimeNest Realty</span>
+                </div>
+                <div class="brand-tagline">AI Property Assistant</div>
+            </div>
+
+            <!-- New Chat -->
+            <button class="new-chat-btn" id="newChatBtn">
+                <span class="icon">✦</span>
+                New Conversation
+            </button>
+
+            <!-- Session List -->
+            <div class="session-list-container">
+                <div class="session-list-label">Chat History</div>
+                <div id="sessionList">
+                    <div class="empty-sessions">
+                        <div class="empty-icon">💬</div>
+                        <p>No conversations yet</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="sidebar-footer">
+                <div class="sidebar-footer-info">
+                    <div class="status-dot"></div>
+                    <span>Powered by Gemini AI</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- ═══ MAIN CONTENT ═══ -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="chat-header">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">☰</button>
+                <div class="chat-header-info">
+                    <div class="chat-header-title" id="chatHeaderTitle">PrimeNest AI Assistant</div>
+                    <div class="chat-header-subtitle">Your smart real estate companion</div>
+                </div>
+                <div class="header-actions">
+                    <div class="header-badge">
+                        <span class="dot"></span>
+                        Online
+                    </div>
+                </div>
+            </header>
+
+            <!-- Messages -->
+            <div class="chat-messages" id="chatMessages">
+                <!-- Welcome Screen -->
+                <div class="welcome-screen" id="welcomeScreen">
+                    <div class="welcome-icon">🏡</div>
+                    <h1 class="welcome-title">Welcome to PrimeNest Realty</h1>
+                    <p class="welcome-subtitle">
+                        I'm your AI-powered property assistant. Ask me about apartments, villas, plots, rentals, 
+                        pricing, amenities, or anything else about real estate in Pune!
+                    </p>
+                    <div class="quick-actions">
+                        <button class="quick-action-btn" data-message="Show me 2 BHK apartments in Baner under 80 lakhs">
+                            <span class="qa-icon">🏢</span>
+                            <span class="qa-text">
+                                <span class="qa-label">Buy an Apartment</span>
+                                2 BHK in Baner under ₹80L
+                            </span>
+                        </button>
+                        <button class="quick-action-btn" data-message="I'm looking for a furnished rental in Hinjewadi for working professionals">
+                            <span class="qa-icon">🔑</span>
+                            <span class="qa-text">
+                                <span class="qa-label">Rent a Property</span>
+                                Furnished rental in Hinjewadi
+                            </span>
+                        </button>
+                        <button class="quick-action-btn" data-message="Show me villas with swimming pool and gym in Pune">
+                            <span class="qa-icon">🏡</span>
+                            <span class="qa-text">
+                                <span class="qa-label">Luxury Villas</span>
+                                Villas with premium amenities
+                            </span>
+                        </button>
+                        <button class="quick-action-btn" data-message="What are your brokerage and booking policies?">
+                            <span class="qa-icon">📋</span>
+                            <span class="qa-text">
+                                <span class="qa-label">Policies & FAQ</span>
+                                Brokerage, booking & more
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Typing Indicator -->
+                <div class="typing-indicator" id="typingIndicator">
+                    <div class="message-avatar">🏠</div>
+                    <div class="typing-bubble">
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                        <div class="typing-dot"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="chat-input-area">
+                <div class="input-wrapper">
+                    <textarea 
+                        class="chat-input" 
+                        id="chatInput" 
+                        placeholder="Ask about properties, prices, amenities..." 
+                        rows="1"
+                        aria-label="Type your message"
+                    ></textarea>
+                    <button class="send-btn" id="sendBtn" aria-label="Send message" disabled>
+                        ➤
+                    </button>
+                </div>
+                <div class="input-hint">Press Enter to send · Shift+Enter for new line</div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
