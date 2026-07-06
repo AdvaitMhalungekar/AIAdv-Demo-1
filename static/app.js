@@ -361,6 +361,157 @@ document.querySelectorAll('.quick-action-btn').forEach(btn => {
 mobileMenuBtn.addEventListener('click', openSidebarMobile);
 sidebarOverlay.addEventListener('click', closeSidebarMobile);
 
+// ─── Call Modal DOM Elements ────────────────────────────────────────────────
+const requestCallBtn = document.getElementById('requestCallBtn');
+const callModalOverlay = document.getElementById('callModalOverlay');
+const callModalClose = document.getElementById('callModalClose');
+const callModalForm = document.getElementById('callModalForm');
+const callModalSuccess = document.getElementById('callModalSuccess');
+const callModalError = document.getElementById('callModalError');
+const phoneInput = document.getElementById('phoneInput');
+const phoneError = document.getElementById('phoneError');
+const callSubmitBtn = document.getElementById('callSubmitBtn');
+const callSubmitLoader = document.getElementById('callSubmitLoader');
+const callDoneBtn = document.getElementById('callDoneBtn');
+const callRetryBtn = document.getElementById('callRetryBtn');
+const callErrorMsg = document.getElementById('callErrorMsg');
+
+
+// ─── Call Modal Logic ───────────────────────────────────────────────────────
+
+function openCallModal() {
+    callModalOverlay.classList.add('visible');
+    resetCallModal();
+    // Focus phone input after animation
+    setTimeout(() => phoneInput.focus(), 350);
+}
+
+function closeCallModal() {
+    callModalOverlay.classList.remove('visible');
+}
+
+function resetCallModal() {
+    callModalForm.style.display = 'block';
+    callModalSuccess.style.display = 'none';
+    callModalError.style.display = 'none';
+    phoneInput.value = '';
+    phoneError.textContent = '';
+    callSubmitBtn.disabled = true;
+    callSubmitBtn.classList.remove('loading');
+}
+
+function showCallSuccess() {
+    callModalForm.style.display = 'none';
+    callModalError.style.display = 'none';
+    callModalSuccess.style.display = 'block';
+}
+
+function showCallError(message) {
+    callModalForm.style.display = 'none';
+    callModalSuccess.style.display = 'none';
+    callModalError.style.display = 'block';
+    callErrorMsg.textContent = message || 'Unable to initiate the call. Please try again.';
+}
+
+function validatePhone(value) {
+    // Only allow digits
+    const digits = value.replace(/\D/g, '');
+    // Indian mobile numbers: 10 digits starting with 6-9
+    if (digits.length === 0) return '';
+    if (digits.length < 10) return 'Please enter a 10-digit mobile number';
+    if (!/^[6-9]\d{9}$/.test(digits)) return 'Please enter a valid Indian mobile number';
+    return '';
+}
+
+async function submitCallRequest() {
+    const digits = phoneInput.value.replace(/\D/g, '');
+    const error = validatePhone(digits);
+
+    if (error) {
+        phoneError.textContent = error;
+        return;
+    }
+
+    // Show loading
+    callSubmitBtn.classList.add('loading');
+    callSubmitBtn.disabled = true;
+    phoneError.textContent = '';
+
+    try {
+        const data = await api('/api/request-call', {
+            method: 'POST',
+            body: JSON.stringify({ phone_number: digits }),
+        });
+
+        if (data.success) {
+            showCallSuccess();
+        } else {
+            showCallError(data.detail || 'Failed to initiate call.');
+        }
+    } catch (err) {
+        console.error('Call request error:', err);
+        // Try to extract error detail from API response
+        let errorMessage = 'Unable to initiate the call. Please check your number and try again.';
+        try {
+            const errorData = await err.response?.json();
+            if (errorData?.detail) errorMessage = errorData.detail;
+        } catch {}
+        showCallError(errorMessage);
+    } finally {
+        callSubmitBtn.classList.remove('loading');
+        callSubmitBtn.disabled = false;
+    }
+}
+
+// ─── Call Modal Event Listeners ─────────────────────────────────────────────
+
+// Open modal
+requestCallBtn.addEventListener('click', openCallModal);
+
+// Close modal
+callModalClose.addEventListener('click', closeCallModal);
+callModalOverlay.addEventListener('click', (e) => {
+    if (e.target === callModalOverlay) closeCallModal();
+});
+
+// Close with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && callModalOverlay.classList.contains('visible')) {
+        closeCallModal();
+    }
+});
+
+// Phone input validation
+phoneInput.addEventListener('input', (e) => {
+    // Only allow digits
+    e.target.value = e.target.value.replace(/\D/g, '');
+    const digits = e.target.value;
+    const error = validatePhone(digits);
+    phoneError.textContent = digits.length > 0 ? error : '';
+    callSubmitBtn.disabled = digits.length !== 10 || error !== '';
+});
+
+// Submit on Enter
+phoneInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !callSubmitBtn.disabled) {
+        e.preventDefault();
+        submitCallRequest();
+    }
+});
+
+// Submit button
+callSubmitBtn.addEventListener('click', submitCallRequest);
+
+// Done button (success state)
+callDoneBtn.addEventListener('click', closeCallModal);
+
+// Retry button (error state)
+callRetryBtn.addEventListener('click', () => {
+    resetCallModal();
+    setTimeout(() => phoneInput.focus(), 100);
+});
+
+
 // ─── Initialization ─────────────────────────────────────────────────────────
 
 async function init() {

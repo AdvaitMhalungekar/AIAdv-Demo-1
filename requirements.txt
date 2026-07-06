@@ -3,3 +3,5 @@ uvicorn[standard]
 google-generativeai
 python-dotenv
 groq
+retell-sdk
+websockets

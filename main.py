@@ -4,15 +4,38 @@ Serves the REST API and static frontend files.
 """
 
 import os
+import re
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, WebSocket
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import Optional
+from dotenv import load_dotenv
 import database as db
 import agent
+import voice_agent
+
+load_dotenv(override=True)
+
+# ─── Retell AI Setup ─────────────────────────────────────────────────────────
+
+try:
+    from retell import Retell
+    RETELL_API_KEY = os.getenv("RETELL_API_KEY", "")
+    RETELL_AGENT_ID = os.getenv("RETELL_AGENT_ID", "")
+    TWILIO_FROM_NUMBER = os.getenv("TWILIO_PHONE_NUMBER", "").replace(" ", "")
+    retell_client = Retell(api_key=RETELL_API_KEY) if RETELL_API_KEY else None
+    if retell_client:
+        print(f"[OK] Retell AI client initialized (agent: {RETELL_AGENT_ID[:8]}...)")
+    else:
+        print("[WARN] No RETELL_API_KEY found. Voice calling will be unavailable.")
+except ImportError:
+    retell_client = None
+    RETELL_AGENT_ID = ""
+    TWILIO_FROM_NUMBER = ""
+    print("[WARN] retell-sdk not installed. Voice calling will be unavailable.")
 
 # ─── Lifespan ─────────────────────────────────────────────────────────────────
 
@@ -57,6 +80,9 @@ class ChatResponse(BaseModel):
 class CreateSessionRequest(BaseModel):
     title: Optional[str] = "New Chat"
 
+class CallRequest(BaseModel):
+    phone_number: str
+
 
 # ─── API Endpoints ───────────────────────────────────────────────────────────
 
@@ -97,6 +123,86 @@ def delete_session_endpoint(session_id: int):
     """Delete a session and its messages."""
     db.delete_session(session_id)
     return {"status": "deleted", "session_id": session_id}
+
+
+# ─── Voice Call Endpoints ────────────────────────────────────────────────────
+
+def _format_indian_phone(raw: str) -> str:
+    """Normalize an Indian phone number to E.164 format (+91XXXXXXXXXX)."""
+    digits = re.sub(r'\D', '', raw)
+    # If they entered full number with country code
+    if digits.startswith('91') and len(digits) == 12:
+        return f'+{digits}'
+    # If they entered 10-digit mobile number
+    if len(digits) == 10:
+        return f'+91{digits}'
+    raise ValueError(f"Invalid Indian mobile number: {raw}")
+
+
+@app.post("/api/request-call")
+def request_call(req: CallRequest):
+    """Initiate an outbound voice call to the user via Retell AI + Twilio."""
+    if not retell_client:
+        raise HTTPException(
+            status_code=503,
+            detail="Voice calling is not configured. Please set RETELL_API_KEY in .env"
+        )
+
+    if not RETELL_AGENT_ID:
+        raise HTTPException(
+            status_code=503,
+            detail="No RETELL_AGENT_ID configured. Please set it in .env"
+        )
+
+    # Validate and format phone number
+    try:
+        to_number = _format_indian_phone(req.phone_number)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    # Initiate the call via Retell SDK
+    try:
+        call_response = retell_client.call.create_phone_call(
+            from_number=TWILIO_FROM_NUMBER,
+            to_number=to_number,
+            override_agent_id=RETELL_AGENT_ID,
+        )
+        print(f"[CALL] Initiated call to {to_number}, call_id={call_response.call_id}")
+        return {
+            "success": True,
+            "call_id": call_response.call_id,
+            "message": "Call initiated! Your phone will ring shortly."
+        }
+    except Exception as e:
+        print(f"[ERROR] Failed to initiate call: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to initiate call: {str(e)}")
+
+
+@app.get("/api/call-status/{call_id}")
+def get_call_status(call_id: str):
+    """Check the status of a voice call."""
+    if not retell_client:
+        raise HTTPException(status_code=503, detail="Voice calling is not configured.")
+
+    try:
+        call = retell_client.call.retrieve(call_id)
+        return {
+            "call_id": call.call_id,
+            "status": call.call_status,
+            "start_timestamp": getattr(call, 'start_timestamp', None),
+            "end_timestamp": getattr(call, 'end_timestamp', None),
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+# ─── Retell Custom LLM WebSocket ─────────────────────────────────────────────
+
+@app.websocket("/llm-websocket/{agent_id}")
+async def retell_llm_websocket(websocket: WebSocket, agent_id: str):
+    """WebSocket endpoint that Retell AI connects to during active calls."""
+    print(f"[VOICE] Incoming WebSocket connection for agent: {agent_id}")
+    await voice_agent.handle_retell_websocket(websocket)
 
 
 # ─── Static Files ────────────────────────────────────────────────────────────
