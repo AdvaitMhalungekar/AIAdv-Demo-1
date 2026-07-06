@@ -940,3 +940,443 @@ body {
         font-size: 0.75rem;
     }
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   REQUEST A CALL — BUTTON
+   ═══════════════════════════════════════════════════════════════════════════ */
+.request-call-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #7b68ee 0%, #118ab2 50%, #06d6a0 100%);
+    background-size: 200% 200%;
+    animation: callBtnGradient 4s ease infinite;
+    border: none;
+    border-radius: var(--radius-full);
+    color: #fff;
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    box-shadow: 0 2px 12px rgba(123, 104, 238, 0.25);
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes callBtnGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.request-call-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+}
+
+.request-call-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 20px rgba(123, 104, 238, 0.35), 0 0 24px rgba(6, 214, 160, 0.15);
+}
+
+.request-call-btn:hover::before {
+    opacity: 1;
+}
+
+.request-call-btn:active {
+    transform: translateY(0) scale(0.97);
+}
+
+.request-call-btn .call-icon {
+    font-size: 0.9rem;
+    animation: callIconPulse 2s ease-in-out infinite;
+}
+
+@keyframes callIconPulse {
+    0%, 100% { transform: rotate(0deg); }
+    10% { transform: rotate(-15deg); }
+    20% { transform: rotate(15deg); }
+    30% { transform: rotate(-10deg); }
+    40% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   CALL MODAL — OVERLAY & CONTAINER
+   ═══════════════════════════════════════════════════════════════════════════ */
+.call-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(6, 10, 20, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    animation: fadeIn 0.25s ease;
+    padding: 24px;
+}
+
+.call-modal-overlay.visible {
+    display: flex;
+}
+
+.call-modal {
+    background: var(--bg-panel);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--radius-xl);
+    padding: 40px 36px;
+    max-width: 420px;
+    width: 100%;
+    position: relative;
+    box-shadow: var(--shadow-lg), 0 0 60px rgba(123, 104, 238, 0.08);
+    animation: modalSlideIn 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    text-align: center;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(24px) scale(0.96);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Close button */
+.call-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-sm);
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+.call-modal-close:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+    border-color: var(--border-light);
+}
+
+/* Modal content */
+.call-modal-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #7b68ee, #118ab2);
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin: 0 auto 20px;
+    box-shadow: 0 4px 20px rgba(123, 104, 238, 0.3);
+}
+
+.call-modal-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.call-modal-desc {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   CALL MODAL — PHONE INPUT
+   ═══════════════════════════════════════════════════════════════════════════ */
+.phone-input-group {
+    display: flex;
+    align-items: stretch;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-card);
+    transition: all var(--transition-base);
+    margin-bottom: 8px;
+}
+
+.phone-input-group:focus-within {
+    border-color: var(--border-focus);
+    box-shadow: 0 0 0 3px rgba(6, 214, 160, 0.1);
+}
+
+.phone-prefix {
+    display: flex;
+    align-items: center;
+    padding: 0 14px;
+    background: var(--bg-elevated);
+    border-right: 1px solid var(--border-subtle);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    user-select: none;
+    min-height: 48px;
+}
+
+.phone-input {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 12px 14px;
+    letter-spacing: 0.04em;
+    min-height: 48px;
+}
+
+.phone-input::placeholder {
+    color: var(--text-muted);
+    letter-spacing: 0;
+    font-size: 0.85rem;
+}
+
+/* Error text */
+.phone-error {
+    min-height: 20px;
+    font-size: 0.75rem;
+    color: #ef4444;
+    text-align: left;
+    padding: 0 4px;
+    margin-bottom: 8px;
+}
+
+/* Submit button */
+.call-submit-btn {
+    width: 100%;
+    padding: 14px 24px;
+    background: var(--gradient-button);
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--text-on-accent);
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm), var(--shadow-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    min-height: 50px;
+}
+
+.call-submit-btn:hover:not(:disabled) {
+    background: var(--gradient-button-hover);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md), 0 0 30px rgba(6, 214, 160, 0.25);
+}
+
+.call-submit-btn:active:not(:disabled) {
+    transform: translateY(0);
+}
+
+.call-submit-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.call-submit-btn.loading .call-submit-text {
+    opacity: 0;
+}
+
+.call-submit-btn.loading .call-submit-loader {
+    display: block;
+}
+
+/* Loader spinner */
+.call-submit-loader {
+    display: none;
+    width: 22px;
+    height: 22px;
+    border: 2.5px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    position: absolute;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   CALL MODAL — SUCCESS STATE
+   ═══════════════════════════════════════════════════════════════════════════ */
+.call-modal-success {
+    animation: fadeInUp 0.4s ease;
+}
+
+.success-ring {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(6, 214, 160, 0.15), rgba(17, 138, 178, 0.15));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    position: relative;
+    animation: successPulse 2s ease-in-out infinite;
+}
+
+.success-ring::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 2px solid rgba(6, 214, 160, 0.3);
+    animation: ringExpand 2s ease-in-out infinite;
+}
+
+.success-ring::after {
+    content: '';
+    position: absolute;
+    inset: -14px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(6, 214, 160, 0.15);
+    animation: ringExpand 2s ease-in-out infinite 0.3s;
+}
+
+@keyframes successPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes ringExpand {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 0; transform: scale(1.2); }
+}
+
+.success-phone {
+    font-size: 32px;
+    animation: phoneRing 1.5s ease-in-out infinite;
+}
+
+@keyframes phoneRing {
+    0%, 100% { transform: rotate(0deg); }
+    5% { transform: rotate(-20deg); }
+    10% { transform: rotate(20deg); }
+    15% { transform: rotate(-15deg); }
+    20% { transform: rotate(15deg); }
+    25% { transform: rotate(-10deg); }
+    30% { transform: rotate(10deg); }
+    35% { transform: rotate(0deg); }
+}
+
+.call-done-btn {
+    padding: 12px 32px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.call-done-btn:hover {
+    background: var(--bg-hover);
+    border-color: var(--accent-primary);
+    color: var(--accent-primary);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   CALL MODAL — ERROR STATE
+   ═══════════════════════════════════════════════════════════════════════════ */
+.call-modal-error {
+    animation: fadeInUp 0.4s ease;
+}
+
+.error-icon {
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+
+.call-error-msg {
+    color: #f87171 !important;
+}
+
+.call-retry-btn {
+    padding: 12px 32px;
+    background: var(--gradient-button);
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--text-on-accent);
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    box-shadow: var(--shadow-sm), var(--shadow-glow);
+}
+
+.call-retry-btn:hover {
+    background: var(--gradient-button-hover);
+    transform: translateY(-1px);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   MOBILE OVERRIDES FOR CALL UI
+   ═══════════════════════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+    .request-call-btn .call-text {
+        display: none;
+    }
+
+    .request-call-btn {
+        padding: 8px 10px;
+        border-radius: var(--radius-sm);
+    }
+
+    .call-modal {
+        padding: 32px 24px;
+        margin: 16px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .call-modal {
+        padding: 28px 20px;
+    }
+
+    .call-modal-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 24px;
+    }
+}

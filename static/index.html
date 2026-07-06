@@ -63,6 +63,10 @@
                     <div class="chat-header-subtitle">Your smart real estate companion</div>
                 </div>
                 <div class="header-actions">
+                    <button class="request-call-btn" id="requestCallBtn" title="Request a voice call">
+                        <span class="call-icon">📞</span>
+                        <span class="call-text">Request a Call</span>
+                    </button>
                     <div class="header-badge">
                         <span class="dot"></span>
                         Online
@@ -140,6 +144,60 @@
                 <div class="input-hint">Press Enter to send · Shift+Enter for new line</div>
             </div>
         </main>
+    </div>
+
+    <!-- ═══ CALL REQUEST MODAL ═══ -->
+    <div class="call-modal-overlay" id="callModalOverlay">
+        <div class="call-modal" id="callModal">
+            <!-- Close Button -->
+            <button class="call-modal-close" id="callModalClose" aria-label="Close">✕</button>
+
+            <!-- Form State -->
+            <div class="call-modal-form" id="callModalForm">
+                <div class="call-modal-icon">📞</div>
+                <h2 class="call-modal-title">Request a Call</h2>
+                <p class="call-modal-desc">
+                    Enter your phone number and our AI property assistant will call you right away!
+                </p>
+                <div class="phone-input-group">
+                    <div class="phone-prefix">+91</div>
+                    <input 
+                        type="tel" 
+                        class="phone-input" 
+                        id="phoneInput" 
+                        placeholder="Enter 10-digit mobile number"
+                        maxlength="10"
+                        autocomplete="tel"
+                        aria-label="Phone number"
+                    />
+                </div>
+                <div class="phone-error" id="phoneError"></div>
+                <button class="call-submit-btn" id="callSubmitBtn" disabled>
+                    <span class="call-submit-text">Call Me Now</span>
+                    <span class="call-submit-loader" id="callSubmitLoader"></span>
+                </button>
+            </div>
+
+            <!-- Success State -->
+            <div class="call-modal-success" id="callModalSuccess" style="display:none">
+                <div class="success-ring">
+                    <div class="success-phone">📱</div>
+                </div>
+                <h2 class="call-modal-title">Call Initiated!</h2>
+                <p class="call-modal-desc">
+                    Your phone will ring shortly. Our AI assistant will help you find your perfect property.
+                </p>
+                <button class="call-done-btn" id="callDoneBtn">Got it</button>
+            </div>
+
+            <!-- Error State -->
+            <div class="call-modal-error" id="callModalError" style="display:none">
+                <div class="error-icon">⚠️</div>
+                <h2 class="call-modal-title">Something Went Wrong</h2>
+                <p class="call-modal-desc call-error-msg" id="callErrorMsg">Unable to initiate the call.</p>
+                <button class="call-retry-btn" id="callRetryBtn">Try Again</button>
+            </div>
+        </div>
     </div>
 
     <script src="/static/app.js"></script>
