@@ -198,11 +198,23 @@ def get_call_status(call_id: str):
 
 # ─── Retell Custom LLM WebSocket ─────────────────────────────────────────────
 
-@app.websocket("/llm-websocket/{agent_id}")
-async def retell_llm_websocket(websocket: WebSocket, agent_id: str):
-    """WebSocket endpoint that Retell AI connects to during active calls."""
-    print(f"[VOICE] Incoming WebSocket connection for agent: {agent_id}")
+@app.websocket("/llm-websocket/{call_id}")
+async def retell_llm_websocket(websocket: WebSocket, call_id: str):
+    """WebSocket endpoint that Retell AI connects to during active calls (prefixed path)."""
+    print(f"[VOICE] Incoming WebSocket connection for call: {call_id}")
     await voice_agent.handle_retell_websocket(websocket)
+
+
+@app.websocket("/{call_id}")
+async def retell_llm_websocket_direct(websocket: WebSocket, call_id: str):
+    """WebSocket endpoint that Retell AI connects to if the base URL was configured at root."""
+    # Only handle it as a voice call websocket if it is a call ID
+    if call_id.startswith("call_"):
+        print(f"[VOICE] Incoming WebSocket connection for direct call: {call_id}")
+        await voice_agent.handle_retell_websocket(websocket)
+    else:
+        await websocket.close(code=1008)
+
 
 
 # ─── Static Files ────────────────────────────────────────────────────────────
@@ -224,4 +236,10 @@ def serve_frontend():
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(
+        app, 
+        host="0.0.0.0", 
+        port=8000, 
+        ws_ping_interval=300, 
+        ws_ping_timeout=300
+    )

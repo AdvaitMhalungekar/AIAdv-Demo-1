@@ -134,7 +134,7 @@ Your role:
 
 Voice-specific guidelines:
 1. Keep responses CONCISE and conversational — this is a phone call, not a text chat
-2. Use natural spoken language, avoid markdown formatting, bullet points, or special characters
+2. Use natural spoken language, avoid markdown formatting, bullet points, numbered list or special characters
 3. When listing properties, mention at most 2-3 key properties and ask if they want more details
 4. Use Indian Rupee amounts spoken naturally (e.g., "fifty-three lakhs" not "₹53,00,000")
 5. Always use the available search tools to find properties — NEVER make up property data
@@ -214,8 +214,40 @@ async def handle_retell_websocket(websocket: WebSocket):
     await websocket.accept()
     print("[VOICE] Retell WebSocket connected")
 
-    # Track response IDs to handle interruptions
+    # Track response IDs and active tasks to handle interruptions/barge-in
     current_response_id = 0
+    active_tasks = {}
+
+    async def process_and_respond(messages: list, r_id: int):
+        """Task worker that processes LLM/tool loop and sends the response back."""
+        try:
+            # Process with Groq (agentic loop for tool calls)
+            final_response = await _process_with_groq(messages)
+
+            # Check if this response is still relevant (user hasn't spoken again)
+            if current_response_id == r_id:
+                await websocket.send_json({
+                    "response_id": r_id,
+                    "content": final_response,
+                    "content_complete": True,
+                    "end_call": False
+                })
+                print(f"[VOICE] Sent response for ID {r_id}: {final_response[:80]}...")
+            else:
+                print(f"[VOICE] Discarded response for ID {r_id} (active is {current_response_id})")
+        except asyncio.CancelledError:
+            print(f"[VOICE] Cancelled task for ID {r_id}")
+        except Exception as e:
+            print(f"[VOICE] Error processing ID {r_id}: {e}")
+            if current_response_id == r_id:
+                await websocket.send_json({
+                    "response_id": r_id,
+                    "content": "I apologize, I'm having a brief technical issue. Could you please repeat your question?",
+                    "content_complete": True,
+                    "end_call": False
+                })
+        finally:
+            active_tasks.pop(r_id, None)
 
     try:
         # Send initial greeting when call connects
@@ -238,15 +270,24 @@ async def handle_retell_websocket(websocket: WebSocket):
 
             interaction_type = data.get("interaction_type", "")
             response_id = data.get("response_id", 0)
-            current_response_id = response_id
 
-            print(f"[VOICE] Received: interaction_type={interaction_type}, response_id={response_id}")
+            # If we get a newer response ID, it means the user started speaking again.
+            # Cancel all ongoing processing for older response IDs.
+            if response_id > current_response_id:
+                current_response_id = response_id
+                for r_id, task in list(active_tasks.items()):
+                    if r_id < response_id:
+                        print(f"[VOICE] User interrupted. Cancelling task for ID {r_id}")
+                        task.cancel()
+                        active_tasks.pop(r_id, None)
 
             if interaction_type == "update_only":
                 # Transcript update — no response needed
                 continue
 
             if interaction_type in ("response_required", "reminder_required"):
+                print(f"[VOICE] Queueing response task for ID: {response_id}")
+                
                 # Build messages from transcript
                 transcript = data.get("transcript", [])
                 messages = [{"role": "system", "content": VOICE_SYSTEM_PROMPT}]
@@ -266,33 +307,22 @@ async def handle_retell_websocket(websocket: WebSocket):
                         "content": "[The caller has been silent for a while. Gently check if they're still there or need help with anything.]"
                     })
 
-                # Process with Groq (agentic loop for tool calls)
-                try:
-                    final_response = await _process_with_groq(messages)
+                # Cancel existing task for this exact response_id if one is running
+                if response_id in active_tasks:
+                    active_tasks[response_id].cancel()
 
-                    # Check if this response is still relevant (not interrupted)
-                    if current_response_id == response_id:
-                        await websocket.send_json({
-                            "response_id": response_id,
-                            "content": final_response,
-                            "content_complete": True,
-                            "end_call": False
-                        })
-                        print(f"[VOICE] Sent response: {final_response[:80]}...")
-
-                except Exception as e:
-                    print(f"[VOICE] Error processing: {e}")
-                    await websocket.send_json({
-                        "response_id": response_id,
-                        "content": "I apologize, I'm having a brief technical issue. Could you please repeat your question?",
-                        "content_complete": True,
-                        "end_call": False
-                    })
+                # Start the generation task in the background
+                task = asyncio.create_task(process_and_respond(messages, response_id))
+                active_tasks[response_id] = task
 
     except Exception as e:
         print(f"[VOICE] WebSocket error: {e}")
     finally:
+        # Cancel all remaining tasks on disconnect
+        for task in active_tasks.values():
+            task.cancel()
         print("[VOICE] WebSocket handler ended")
+
 
 
 async def _process_with_groq(messages: list) -> str:
